@@ -5,7 +5,7 @@ body {
 	background: #2F3B4B;
 	font-family: arial;
 	display: grid;
-	grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 30% 50% 20%;
 	grid-template-rows: auto;
 	grid-template-areas: "header header header"
 						"nav main aside"
@@ -29,9 +29,11 @@ grid-area: nav;
 nav ul {
 	list-style-type: none;
     display: grid;
+    grid-template-rows: 33% 33% 33%;
+    text-align: center;
 }
-    a {color: blue;}
-    a :hover { 
+    nav ul a {color: blue;}
+    a:hover { 
         color: red;
     }
 
@@ -40,9 +42,8 @@ main {
 	grid-area: main;
 	background-color: #E6E5E0;
 	color: black;
-	text-align: center;
+    text-align: center;
 }
-
 
 aside {
 	grid-area: aside;
@@ -55,4 +56,11 @@ footer {
 	background-color: #f8bbd0;
 	color: white;
 	grid-area: footer;
+}
+
+img{
+    border-radius: 2px;
+    height: auto;
+    width: 8cm;
+
 }
